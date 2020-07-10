@@ -26,7 +26,7 @@ for t in tr_elements[0]:
     print(name)
 
 # Renaming column names.
-colnames = ['Date', 'Travelers 2020', 'Travelers 2019']
+colnames = ['Date', '2020', '2019']
 
 # Creating lists of table data.
 data = [[], [], []]
@@ -46,8 +46,8 @@ tsa = pd.DataFrame(tsa)
 
 # Changing data types.
 tsa['Date'] = pd.to_datetime(tsa['Date'])
-tsa['Travelers 2019'] = pd.to_numeric(tsa['Travelers 2019'].str.replace(',', ''))
-tsa['Travelers 2020'] = pd.to_numeric(tsa['Travelers 2020'].str.replace(',', ''))
+tsa['2019'] = pd.to_numeric(tsa['2019'].str.replace(',', ''))
+tsa['2020'] = pd.to_numeric(tsa['2020'].str.replace(',', ''))
 
 # Sorting by Date.
 tsa = tsa.sort_values(by = 'Date')
