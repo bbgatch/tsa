@@ -56,4 +56,5 @@ tsa = tsa.sort_values(by = 'Date')
 today_date = datetime.today().strftime('%Y-%m-%d')
 
 # Save dataframe as CSV with today's date included in filename.
+tsa.to_csv("tsa.csv", index = False)
 tsa.to_csv("tsa_" + today_date + ".csv", index = False)

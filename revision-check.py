@@ -8,6 +8,7 @@ yesterday = (datetime.today() - timedelta(1)).strftime('%Y-%m-%d')
 # Read in two latest data files.
 data_today = pd.read_csv("tsa_" + today + ".csv")
 data_yesterday = pd.read_csv("tsa_" + yesterday + ".csv")
+# data_yesterday = pd.read_csv("tsa_" + "2020-07-10" + ".csv")
 
 # Calculate difference in today's and yesterday's traveler counts.
 diff = data_today["2020"] - data_yesterday["2020"]
@@ -17,4 +18,6 @@ diff = diff.dropna()
 
 # Sum differences.
 sum(diff)
+
+
 
