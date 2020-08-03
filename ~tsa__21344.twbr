@@ -1,0 +1,1060 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='tsa_15931851223980' path='/workbooks' revision='3.8' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='12' />
+      <format attr='font-weight' value='bold' />
+    </style-rule>
+    <style-rule element='title'>
+      <format attr='font-weight' value='bold' />
+      <format attr='font-size' value='24' />
+    </style-rule>
+    <style-rule element='all'>
+      <format attr='font-family' value='Arial' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='tsa-travelers' inline='true' name='federated.046ye9f1x0iesi0zsi00m1w59d6s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tsa-travelers' name='textscan.1w2ja6w1t4pezq197djvd0sl9ytg'>
+            <connection class='textscan' directory='C:/Users/benga/OneDrive/Documents/GitHub/tsa' filename='tsa_2020-07-10.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1w2ja6w1t4pezq197djvd0sl9ytg' name='tsa.csv' table='[tsa#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='2020' ordinal='1' />
+            <column datatype='integer' name='2019' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1w2ja6w1t4pezq197djvd0sl9ytg' name='tsa.csv' table='[tsa#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='2020' ordinal='1' />
+            <column datatype='integer' name='2019' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tsa.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[tsa.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tsa.csv_B60B6750263345A78BBC463B87FA3C1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020]</local-name>
+            <parent-name>[tsa.csv]</parent-name>
+            <remote-alias>2020</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tsa.csv_B60B6750263345A78BBC463B87FA3C1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2019]</local-name>
+            <parent-name>[tsa.csv]</parent-name>
+            <remote-alias>2019</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tsa.csv_B60B6750263345A78BBC463B87FA3C1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[2019]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2020]' role='measure' type='quantitative' />
+      <column caption='7 Day Prior % Chg' datatype='real' default-format='p0.0%' name='[7 Day Prior Change (copy)_1768507283437502464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(ZN(SUM([2020])) / LOOKUP(ZN(SUM([2020])), -7)) - 1'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Traveler % Chg' datatype='real' default-format='p0%' name='[Calculation_664281010042351617]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([2020]) / sum([2019]) - 1' />
+      </column>
+      <column caption='Latest Date' datatype='date' name='[Calculation_664281010042839042]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{FIXED : max([Date])}' />
+      </column>
+      <column caption='Percent Chg' datatype='real' default-format='p0%' name='[Calculation_780811651083247616]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-(1 - (sum([2020]) / sum([2019])))' />
+      </column>
+      <column caption='7 Day Prior Chg' datatype='integer' name='[Calculation_819655199275044867]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([2020])) - LOOKUP(ZN(SUM([2020])), -7)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='tsa.csv' datatype='table' name='[__tableau_internal_object_id__].[tsa.csv_B60B6750263345A78BBC463B87FA3C1D]' role='measure' type='quantitative' />
+      <column-instance column='[2019]' derivation='Sum' name='[sum:2019:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2020]' derivation='Sum' name='[sum:2020:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_780811651083247616]' derivation='User' name='[usr:Calculation_780811651083247616:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_819655199275044867]' derivation='User' name='[usr:Calculation_819655199275044867:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Date]' derivation='Week' name='[wk:Date:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/tsa.twb Files/tsa-travelers.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tsa.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2020</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2020]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2020</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tsa.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2019</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2019]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2019</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tsa.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[wk:Date:ok]' palette='gray_warm_10_0' type='palette'>
+            <map to='#59504e'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#98908c'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#dcd4d0'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#dcd4d0'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#dcd4d0'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>27</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[diff:sum:2020:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_780811651083247616:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.046ye9f1x0iesi0zsi00m1w59d6s]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tsa.csv' id='tsa.csv_B60B6750263345A78BBC463B87FA3C1D'>
+            <properties context=''>
+              <relation connection='textscan.1w2ja6w1t4pezq197djvd0sl9ytg' name='tsa.csv' table='[tsa#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='2020' ordinal='1' />
+                  <column datatype='integer' name='2019' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Daily Week Over Week'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>TSA Checkpoint Travelers | Daily Week Over Week Change
+</run>
+            <run bold='false' fontsize='18' italic='true'><![CDATA[2020 vs. 2019. Data through <[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]>.]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tsa-travelers' name='federated.046ye9f1x0iesi0zsi00m1w59d6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.046ye9f1x0iesi0zsi00m1w59d6s'>
+            <column datatype='integer' name='[2020]' role='measure' type='quantitative' />
+            <column caption='7 Day Prior % Chg' datatype='real' default-format='p0.0%' name='[7 Day Prior Change (copy)_1768507283437502464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([2020])) / LOOKUP(ZN(SUM([2020])), -7)) - 1'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Latest Date' datatype='date' name='[Calculation_664281010042839042]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : max([Date])}' />
+            </column>
+            <column caption='7 Day Prior Chg' datatype='integer' name='[Calculation_819655199275044867]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([2020])) - LOOKUP(ZN(SUM([2020])), -7)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Attribute' name='[attr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[2020]' derivation='Sum' name='[sum:2020:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_664281010042839042]' derivation='Day-Trunc' name='[tdy:Calculation_664281010042839042:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[7 Day Prior Change (copy)_1768507283437502464]' derivation='User' name='[usr:7 Day Prior Change (copy)_1768507283437502464:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_819655199275044867]' derivation='User' name='[usr:Calculation_819655199275044867:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]' scope='rows' value='7 Day Prior Change in Travelers' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' value='*mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' value='*ddd mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*dddd, mmmm d' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' value='*ddd mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*ddd mmm d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[:Measure Names]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:7 Day Prior Change (copy)_1768507283437502464:qk]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+              <tooltip column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' />
+              <tooltip column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]' />
+              <tooltip column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020 Travelers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Chg from week ago: </run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_819655199275044867:qk]</rows>
+        <cols>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{8EED4ED3-F287-4860-A8CF-AF5CA27CC024}' />
+    </worksheet>
+    <worksheet name='Day of Week'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>TSA Checkpoint Travelers | Last Three Weeks
+</run>
+            <run bold='false' fontsize='18' italic='true'><![CDATA[2020 vs. 2019. Data through <[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]>.]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tsa-travelers' name='federated.046ye9f1x0iesi0zsi00m1w59d6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.046ye9f1x0iesi0zsi00m1w59d6s'>
+            <column datatype='integer' name='[2020]' role='measure' type='quantitative' />
+            <column caption='Latest Date' datatype='date' name='[Calculation_664281010042839042]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : max([Date])}' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Attribute' name='[attr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Max' name='[max:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020]' derivation='Sum' name='[sum:2020:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_664281010042839042]' derivation='Day-Trunc' name='[tdy:Calculation_664281010042839042:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Week' name='[wk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([Date])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[wk:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]' direction='DESC' using='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[max:Date:qk]' />
+          <slices>
+            <column>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wd:Date:ok]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*dddd, mmmm d' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*ddd mmm d' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+              <tooltip column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wd:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wk:Date:ok]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]</rows>
+        <cols>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[wd:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{16CCC4E0-0DE9-4DB6-9364-DEDE1AF690C0}' />
+    </worksheet>
+    <worksheet name='Percent Change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>TSA Checkpoint Travelers | Percent Change Trend
+</run>
+            <run bold='false' fontsize='18' italic='true'><![CDATA[2020 vs. 2019. Data through <[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]>.]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tsa-travelers' name='federated.046ye9f1x0iesi0zsi00m1w59d6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.046ye9f1x0iesi0zsi00m1w59d6s'>
+            <column datatype='integer' name='[2019]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[2020]' role='measure' type='quantitative' />
+            <column caption='Latest Date' datatype='date' name='[Calculation_664281010042839042]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : max([Date])}' />
+            </column>
+            <column caption='Percent Chg' datatype='real' default-format='p0%' name='[Calculation_780811651083247616]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-(1 - (sum([2020]) / sum([2019])))' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_664281010042839042]' derivation='Day-Trunc' name='[tdy:Calculation_664281010042839042:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_780811651083247616]' derivation='User' name='[usr:Calculation_780811651083247616:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' value='*ddd mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*dddd, mmmm d' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*mmm dd' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[:Measure Names]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_780811651083247616:qk]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percent Chg:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_780811651083247616:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_780811651083247616:qk]</rows>
+        <cols>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{F3E2EE01-0B36-4C2E-AE4A-4B140FF136A6}' />
+    </worksheet>
+    <worksheet name='Travelers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>TSA Checkpoint Travelers&#10;</run>
+            <run bold='false' fontsize='18' italic='true'><![CDATA[2020 vs. 2019. Data through <[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]>.]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tsa-travelers' name='federated.046ye9f1x0iesi0zsi00m1w59d6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.046ye9f1x0iesi0zsi00m1w59d6s'>
+            <column datatype='integer' name='[2019]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[2020]' role='measure' type='quantitative' />
+            <column caption='Traveler % Chg' datatype='real' default-format='p0%' name='[Calculation_664281010042351617]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([2020]) / sum([2019]) - 1' />
+            </column>
+            <column caption='Latest Date' datatype='date' name='[Calculation_664281010042839042]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : max([Date])}' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Attribute' name='[attr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[2019]' derivation='Sum' name='[sum:2019:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2020]' derivation='Sum' name='[sum:2020:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_664281010042839042]' derivation='Day-Trunc' name='[tdy:Calculation_664281010042839042:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_664281010042351617]' derivation='User' name='[usr:Calculation_664281010042351617:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]' scope='rows' value='Travelers' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' value='*ddd mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*dddd, mmmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' value='*ddd mmm d' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' value='*ddd mmm d' />
+            <format attr='text-format' field='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' value='*ddd mmm d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[:Measure Names]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2019:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Traveler % Chg:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_664281010042351617:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[:Measure Names]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2019 Travelers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020 Travelers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Traveler % Chg:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_664281010042351617:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>2019:</run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[:Measure Names]' />
+              <lod column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Calculation_664281010042839042:qk]' />
+              <tooltip column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]' />
+              <text column='[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_664281010042351617:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[attr:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2019:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2020:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Chg:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_664281010042351617:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>2020:</run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk]>]]></run>
+                <run><![CDATA[
+<[federated.046ye9f1x0iesi0zsi00m1w59d6s].[usr:Calculation_664281010042351617:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2019:qk] + [federated.046ye9f1x0iesi0zsi00m1w59d6s].[sum:2020:qk])</rows>
+        <cols>[federated.046ye9f1x0iesi0zsi00m1w59d6s].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{D5146086-6F57-49BC-99AB-15F46C2CFBD9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Daily WOW'>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='97916' id='3' name='Daily Week Over Week' w='98438' x='781' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='166' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='165' param='vert' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Daily Week Over Week' w='98438' x='781' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B4CE03AB-3A5E-474E-9D96-0F9401C88172}' />
+    </dashboard>
+    <dashboard name='Last Three Weeks by DOW'>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='97916' id='51' name='Day of Week' w='98438' x='781' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='167' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='166' param='vert' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='97916' id='51' is-fixed='true' name='Day of Week' w='98438' x='781' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{44B7B74A-593A-457A-A00E-403E65B15289}' />
+    </dashboard>
+    <dashboard name='Percent Change Trend'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Percent Change' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='170' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='169' param='vert' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Percent Change' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{04A2EE0A-72B2-453D-A1D0-B7C6FB65FA0F}' />
+    </dashboard>
+    <dashboard name='TSA Travelers'>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='97916' id='3' name='Travelers' w='98438' x='781' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='170' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='169' param='vert' w='98438' x='781' y='1042'>
+                <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Travelers' w='98438' x='781' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{22ADC0CE-FC36-48D3-A016-0FB00A9C59C4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='TSA Travelers'>
+      <viewpoints>
+        <viewpoint name='Travelers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A0F0F5D1-5E98-44D4-BE83-63D2C34933DF}' />
+    </window>
+    <window class='dashboard' name='Daily WOW'>
+      <viewpoints>
+        <viewpoint name='Daily Week Over Week'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2A766C97-C468-4325-A495-A5C5A8E75875}' />
+    </window>
+    <window class='dashboard' name='Percent Change Trend'>
+      <viewpoints>
+        <viewpoint name='Percent Change'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{BE176245-A2F1-4959-BA84-E076BF291332}' />
+    </window>
+    <window class='dashboard' name='Last Three Weeks by DOW'>
+      <viewpoints>
+        <viewpoint name='Day of Week'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{913E576B-3C04-4B81-AF8F-D7CD1A433A6A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Daily Week Over Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='215'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{789F4FBB-AD48-443D-867B-927AF014CB1C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Day of Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='203'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3714E9E4-92F6-45BC-A2F1-A0119D792B23}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Percent Change'>
+      <cards>
+        <edge name='left'>
+          <strip size='176'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1AFF993-09EE-4871-B4D2-92EA9922DCC4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Travelers'>
+      <cards>
+        <edge name='left'>
+          <strip size='167'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8381AEF-6346-4CF1-A417-741BE77C2535}' />
+    </window>
+  </windows>
+</workbook>
