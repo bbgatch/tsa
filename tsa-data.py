@@ -12,7 +12,7 @@ url = "https://www.tsa.gov/coronavirus/passenger-throughput"
 # Create handle for the site contents.
 page = requests.get(url)
 
-# Stor the contents of the website.
+# Store the contents of the website.
 doc = lh.fromstring(page.content)
 
 # Parse data stored between <tr>..</tr> of HTML tr_elements = doc.xpath('//tr')
